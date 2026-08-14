@@ -1,0 +1,12 @@
+venv/
+data/images/*
+data/images/*_bgremoved.png
+__pycache__/
+*.pyc
+.env
+.streamlit/secrets.toml
+*.egg-info/
+dist/
+build/
+.DS_Store
+get-pip.py

@@ -1,0 +1,35 @@
+# Core framework
+streamlit>=1.36.0
+langchain>=0.3.0
+langchain-openai>=0.2.0
+langchain-core>=0.3.0
+langgraph>=0.2.0
+langgraph-prebuilt>=0.1.0
+
+# LLM
+openai>=1.40.0
+
+# Image processing
+Pillow>=10.0.0
+opencv-python-headless>=4.8.0
+numpy>=1.24.0
+
+# Embedding model
+torch>=2.0.0
+torchvision>=0.15.0
+transformers>=4.35.0
+
+# Background removal
+rembg>=2.0.50
+onnxruntime>=1.16.0
+
+# Vector store
+faiss-cpu>=1.7.4
+
+# Data
+pandas>=2.0.0
+tqdm>=4.65.0
+requests>=2.31.0
+
+# Env
+python-dotenv>=1.0.0
