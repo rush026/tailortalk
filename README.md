@@ -2,7 +2,7 @@
 
 An AI-powered conversational agent that finds visually similar sarees from a fashion catalog using image embeddings, vector search, and natural-language chat.
 
-> **Live Demo**: [🔗 Try TailorTalk](#) *(deploy URL here)*
+> **Live Demo**: [🔗 Try TailorTalk](#) *(https://tailortalk-uit2.onrender.com/)*
 >
 > Upload any saree image and get the closest visual matches from the Byrappa Silks collection.
 
