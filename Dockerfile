@@ -24,12 +24,13 @@ RUN python -c "from rembg import new_session; new_session('u2net')"
 # Copy application code
 COPY . .
 
-# Streamlit config
+# Make start script executable
+RUN chmod +x start.sh
+
+# Render uses dynamic PORT; expose a default for local docker testing
 EXPOSE 8501
 
-HEALTHCHECK CMD curl --fail http://localhost:8501/_stcore/health || exit 1
+HEALTHCHECK CMD curl --fail http://localhost:${PORT:-8501}/_stcore/health || exit 1
 
-ENTRYPOINT ["streamlit", "run", "app.py", \
-    "--server.port=8501", \
-    "--server.address=0.0.0.0", \
-    "--server.headless=true"]
+# Use shell script so $PORT is resolved at runtime
+CMD ["bash", "start.sh"]
