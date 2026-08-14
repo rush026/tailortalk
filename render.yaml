@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: tailortalk
+    runtime: python
+    plan: starter
+    buildCommand: bash build.sh
+    startCommand: streamlit run app.py --server.port=$PORT --server.address=0.0.0.0 --server.headless=true
+    envVars:
+      - key: PYTHON_VERSION
+        value: "3.11.9"
+      - key: OPENAI_API_KEY
+        sync: false
